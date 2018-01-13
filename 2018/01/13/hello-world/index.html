@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>wechat_jump（iOS未调试，限安卓） | Duke</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="一.环境准备    1、Python下载        在Python官网https://www.python.org/ftp/python/2.7.7/ 下载好你电脑相应版本的Python2，并安装（安装时务必记好安装的位置，下面会用到）；    2、adb安装        adb驱动下载地址：https://adb.clockworkmod.com/        下载压缩包并进行安装，此安">
+<meta property="og:type" content="article">
+<meta property="og:title" content="wechat_jump（iOS未调试，限安卓）">
+<meta property="og:url" content="http://yoursite.com/2018/01/13/hello-world/index.html">
+<meta property="og:site_name" content="Duke">
+<meta property="og:description" content="一.环境准备    1、Python下载        在Python官网https://www.python.org/ftp/python/2.7.7/ 下载好你电脑相应版本的Python2，并安装（安装时务必记好安装的位置，下面会用到）；    2、adb安装        adb驱动下载地址：https://adb.clockworkmod.com/        下载压缩包并进行安装，此安">
+<meta property="og:image" content="http://yoursite.com/2018/01/13/hello-world/images/path.png">
+<meta property="og:image" content="http://yoursite.com/2018/01/13/hello-world/images/python.png">
+<meta property="og:image" content="http://yoursite.com/2018/01/13/hello-world/images/pip.png">
+<meta property="og:image" content="http://yoursite.com/2018/01/13/hello-world/images/adb.png">
+<meta property="og:image" content="http://yoursite.com/2018/01/13/hello-world/images/clone.png">
+<meta property="og:updated_time" content="2018-01-13T11:01:26.594Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="wechat_jump（iOS未调试，限安卓）">
+<meta name="twitter:description" content="一.环境准备    1、Python下载        在Python官网https://www.python.org/ftp/python/2.7.7/ 下载好你电脑相应版本的Python2，并安装（安装时务必记好安装的位置，下面会用到）；    2、adb安装        adb驱动下载地址：https://adb.clockworkmod.com/        下载压缩包并进行安装，此安">
+<meta name="twitter:image" content="http://yoursite.com/2018/01/13/hello-world/images/path.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Duke" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Duke</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/01/13/hello-world/" class="article-date">
+  <time datetime="2018-01-13T09:06:24.000Z" itemprop="datePublished">2018-01-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      wechat_jump（iOS未调试，限安卓）
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一.环境准备<br>    1、Python下载<br>        在Python官网<a href="https://www.python.org/ftp/python/2.7.7/" target="_blank" rel="noopener">https://www.python.org/ftp/python/2.7.7/</a> 下载好你电脑相应版本的Python2，并安装（安装时务必记好安装的位置，下面会用到）；<br>    2、adb安装<br>        adb驱动下载地址：<a href="https://adb.clockworkmod.com/" target="_blank" rel="noopener">https://adb.clockworkmod.com/</a><br>        下载压缩包并进行安装，此安装也要记好安装路径；<br>    3、配置环境变量<br>       鼠标右击“我的电脑”（此电脑）点击“属性”&gt;点击”高级系统设置“&gt;点击下面的“环境变量”&gt;在下面的“系统变量”框中找到“Path”双击点开（如下图位置）,<br>       将Python的安装位置（就是一个命名为“Python27的文件夹的位置”）添加进去，还有该文件夹中命名为“Scripts”的文件夹位置添加进去，再将上面2中adb的只能装位置进行添加；<br>      <img src="images/path.png" alt=""><br>    这一步进行完后你你在命令行中输入“python”，“pip”,“adb”<br><br><br>    <img src="images/python.png" alt=""><br>    <img src="images/pip.png" alt=""><br>    <img src="images/adb.png" alt=""><br>二.依赖安装与代码运行<br>    1、在git下载代码包<br>        点击 <a href="https://github.com/wangshub/wechat_jump_game.git" target="_blank" rel="noopener">https://github.com/wangshub/wechat_jump_game.git</a> 进入后，点击“clone or download”按钮直接下载或用git下载（解压）<br><br>    <img src="images/clone.png" alt=""><br>    2、依赖下载<br>    在代码文件夹中运行命令行输入<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure><br>        等待所安装完成<br>    3、连接手机与电脑<br>        用数据线连接电脑，然后进入开发者模式（根据手机不同方法也不同可自行百度，最常见是连击系统版本5次进入），进入后，打开USB调试，<br>        有一部分手机（例如MIUI）可能还需要启用模拟点击权限，若正常的话连接完成后在命令行输入<br>        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb devices</span><br></pre></td></tr></table></figure><br>        会显示端口号。<br>    4、调参与运行<br>        在“config”文件夹中找到你手机的型号或者手机屏幕的参数，将其中的json文件的代码复制替换掉config根目录中的“default.json”文件中代码，<br>        然后，打开跳一跳，在代码文件夹中打开命令行输入<br>        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python wechat_jump_auto.py</span><br></pre></td></tr></table></figure><br>        运行以后就能装逼了。误差较大的话可以自己适当改改“default.json”文件中的一些数据，这个可以不断尝试的改。<br>    5、一点建议<br>        大家可以把“wechat_jump_auto.py”文件中line247中的代码改为<br>        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">time.sleep(random.uniform(1.2, 1.5))</span><br></pre></td></tr></table></figure><br>        这样能正好的在每一项加分项加分。<br>    <br><br>    <br><br>    <br><br>    <br><br>    本文借鉴了一些其他人的博客，加上自己使用的的感受，如有疑问、建议或者侵权请邮件1635325843@qq.com联系DukeChiu</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/01/13/hello-world/" data-id="cjcd8x2fx00002ct36veeer79" class="article-share-link">Teilen</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/01/13/hello-world/">wechat_jump（iOS未调试，限安卓）</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 DukeChiu<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
